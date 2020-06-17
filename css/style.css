@@ -32,7 +32,7 @@ main{
 .header{
   height: 100vh;
   color: #ffffff;
-  line-height: 50px;
+  /*line-height: 50px;*/
 }
 
 .header-content{
@@ -46,7 +46,10 @@ main{
 
 .header-content h2 span{
   color: #f1c11a;
-  line-height: 100px;
+  
+}
+.header-content h2{
+  padding: 50px 0;
 }
 
 .btn{
@@ -78,11 +81,11 @@ main{
 
 .intro{
   background-color: #ffffff;
-  padding: 15vh 0;
+  padding: 18vh 0;
 }
 
 .intro-content{
-  height: 50vh;
+  /*height: 50vh;*/
   display: flex;
   flex-wrap: wrap;
 }
@@ -99,9 +102,10 @@ main{
 
 .services{
   background-color: #f1c11a;
-  height: 50vh;
-  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
-  margin-top: -15vh;
+  /*height: 50vh;*/
+  /*clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);*/
+  clip-path: polygon(0 0, 15% 0, 56% 16%, 99% 0, 100% 0, 101% 100%, 0 100%, 0 0);
+  margin-top: -24vh;
 }
 
 .service-content{
@@ -157,28 +161,42 @@ footer{
   padding-bottom: 30px;
 }
 
+.button-div{
+  margin-top:45px;
+}
+
 @media screen and (max-width: 768px){
   .header-content h2{
     font-size: 20px;
+    
   }
-
+  .header-content h2 span {
+    color: #f1c11a;
+    /*line-height: 60px;*/
+}
+ .header-content{
+  padding-top: 20vh;
+ }
   .intro-content{
     display: block;
-    height: 90vh;
+    /*height: 90vh;*/
   }
 
   .intro-content div{
     width: 100%;
   }
 
+
   .services{
-    height: 100vh;
-    clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    /*height: 100vh;*/
+    /*clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);*/
+        /* height: 100vh; */
+    clip-path: polygon(0 0, 15% 0, 50% 4%, 70% 0, 100% 0, 100% 100%, 0 100%, 0 0);
   }
 
   .service-content{
     display: block;
-    margin-top: -15vh;
+    /*margin-top: -15vh;*/
     padding-top: 1px;
   }
 
@@ -186,4 +204,42 @@ footer{
     width: 100%;
     margin: 80px 3%;
   }
+  .header-content h2{
+  padding: 10px 0;
+  }
+  .services{
+    margin-top: -44px;
+    padding-bottom: 4px;
+  }
+}
+
+
+
+@media screen and (max-width: 496px){
+  
+  body{font-size:0.85em; }
+
+  .header-content h2{
+    font-size: 1.5em;
+    
+  }
+  .header-content h2 span {
+    color: #f1c11a;
+    /*line-height: 60px;*/
+}
+
+
+
+.button-div>a{
+  position: relative;
+  display: block;
+  margin-top:5%;
+  margin-left: 16%;
+  margin-right:16%;
+  margin-bottom: 2%;
+}
+
+.intro {
+   margin-top: 1em;}
+
 }
